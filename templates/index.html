@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask Demo</title>
+</head>
+<body>
+
+    <h1>Enter Your Name</h1>
+
+    <form method="POST">
+        <input type="text" name="username" placeholder="Enter Name" required>
+        <input type="text" name="project" placeholder="Enter your project name" required>
+        <input type="numbar" name="cgpa" placeholder="Enter your CGPA" required>
+        <input type="text" name="role" placeholder="Enter your destination" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>Your name : {{ name }}</h2>
+    <h2>Your project name :{{ project }}</h2>
+    <h2>Your CGPA : {{ cgpa }}</h2>
+    <h2>Role : {{ role }}</h2>
+
+</body>
+</html>
