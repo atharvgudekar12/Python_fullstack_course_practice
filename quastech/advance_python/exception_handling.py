@@ -1,10 +1,12 @@
 try:
     number = int(input("Enter the number :"))
     result = 10 / number
-except ValueError:
+except ValueError as e:
     print("Please enter the valid value")
-except ZeroDivisionError:
+    print(e)
+except ZeroDivisionError as e:
     print("value canot be divide by zero")
+    print(e)
 else:
     print(result)
 finally:
